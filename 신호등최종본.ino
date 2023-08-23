@@ -146,7 +146,7 @@ void loop() {
     if(!bluetoothConnected){ //처음 연결 된거라면
       if (bluetooth.available()) { // 블루투스 모듈 1이 연결되었다면
       Serial.println("Bluetooth module 1 is connected");
-      bluetooth.write("connected"); // 지팡이에서는 이 메세지를 받으면 진동 울리기
+      bluetooth.write("s"); // 지팡이에서는 이 메세지를 받으면 진동 울리기
       bluetoothConnected = true; //이거는 뒤에 일정 시간이 지나면 false로 바꾸는거 추가해야함!!!!!!!!!!!!!!!!!!!!!!
       bluetoothTimming = millis(); }//이거가지고 블투 시간 체크해서 할듯
 
